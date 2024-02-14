@@ -117,3 +117,44 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 50px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    .buttonBox {
+        display: block;
+        /* Stack the buttons vertically */
+        width: 150px;
+        /* Increase the width for larger buttons */
+        height: 60px;
+        /* Increase the height for larger buttons */
+        margin: 20px auto;
+        /* Center the buttons and add more space between them */
+    }
+
+    button {
+        padding: 15px 30px;
+        /* Increase padding for larger buttons */
+        font-size: 18px;
+        /* Increase font size for larger buttons */
+    }
+
+    .popup-image {
+        max-width: 80%;
+    }
+
+    .popup-message {
+        font-size: 18px;
+    }
+
+    .popup-close {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
