@@ -31,6 +31,27 @@ noButton.addEventListener('click', () => {
     }
 });
 
+noButton.addEventListener('touchstart', () => {
+    if (stage === 2 && !isTired) {
+        moveNoButton();
+    }
+});
+
+noButton.addEventListener('touchmove', () => {
+    if (stage === 2 && !isTired) {
+        moveNoButton();
+    }
+});
+
+function moveNoButton() {
+    const randomTop = Math.random() * 200 - 100; // Adjust values as needed
+    const randomLeft = Math.random() * 200 - 100; // Adjust values as needed
+    noBox.style.position = 'relative';
+    noBox.style.top = `${randomTop}px`;
+    noBox.style.left = `${randomLeft}px`;
+}
+
+
 function resetNoButtonPosition() {
     noBox.style.top = '0px';
     noBox.style.left = '0px';
