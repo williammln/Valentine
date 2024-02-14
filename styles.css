@@ -1,0 +1,119 @@
+body {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.png');
+    background-size: cover;
+    color: white;
+}
+
+#message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttonBox {
+    display: inline-block;
+    margin: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffcccc;
+}
+
+#noButton {
+    position: relative;
+    /* Adjusted in JavaScript */
+}
+
+#noBox {
+    transition: top 0.5s ease, left 0.5s ease;
+    /* Adjust the duration and easing function as needed */
+}
+
+.buttonBox {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    /* Adjust as needed */
+    height: 50px;
+    /* Adjust as needed */
+}
+
+.covered {
+    background-color: #f0f0f0;
+    /* Color to cover the buttons */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    /* Match your button border-radius */
+}
+
+.tiredMessage {
+    position: absolute;
+    top: -20px;
+    /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #020202;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.popup-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.popup-message {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.popup-close {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
